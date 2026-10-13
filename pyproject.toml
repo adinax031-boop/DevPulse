@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devpulse-git"
+version = "0.1.0"
+description = "Private Git activity analytics and beautiful offline reports"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+devpulse = "devpulse.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/adinax031-boop/DevPulse"
+
+[tool.setuptools.packages.find]
+include = ["devpulse*"]
+
+[tool.ruff.lint]
+select = ["E9", "F63", "F7", "F82"]
